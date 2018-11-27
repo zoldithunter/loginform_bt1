@@ -3,23 +3,128 @@
 	padding: 0;
 }
 
-#header {
+body {
+	height: -webkit-fill-available;
+	background: radial-gradient(circle, #67456b, #2f0e32), url(images/bg.png);
+	background-repeat: no-repeat;
+	font-family: Roboto, san-serif;
+}
+
+#login-form {
+	background-color: #f2f2f2;
 	width: 400px;
-	height: 400px;
+	height: 237px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -150px;
+	border-radius: 0px 0px 2px 2px;
 }
 
-#header div {
-	float: right;
-	width: 10px;
-	height: 10px;
+#login-form #header {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 63px;
+	margin-left: -200px;
+	margin-top: -213px;
+	background: #714c74 url(images/bg-header.png) repeat-x left center;
+	border-radius: 2px 2px 0px 0px;
+}
+#login-form #header h1 {
 	font-weight: bold;
-	transform: rotate(45deg);
-	box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 22px;
+    float: left;
 }
 
-#header a {
+#login-form #header a {
+	font-weight: bold;
+	color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 22px;
+    float: right;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+
+#login-form div:first-child {
+	border: 1px solid rgba(0,0,0,0.1);
+	background: transparent url(images/User.png) no-repeat right center;
+	background-color: #f0eef0;
+	margin-left: 22px;
+    margin-top: 23px;
+    width: 356px;
+    height: 50px;
+}
+
+#login-form div:first-child input#username {
+	border: none;
+	margin-top: 21px;
+	margin-left: 21px;
+	font-weight: bold;
+	background-color: #f0eef0;
+	opacity: 0.7;
+}
+
+#login-form div:nth-child(2) {
+	border: 1px solid rgba(0,0,0,0.1);
+	background: transparent url(images/Locked.png) no-repeat right center;
+	background-color: #f0eef0;
+	margin-left: 22px;
+    margin-top: 23px;
+    width: 356px;
+    height: 50px;
+}
+
+#login-form div:nth-child(2) input#password {
+	border: none;
+	margin-top: 21px;
+	margin-left: 21px;
+	font-weight: bold;
+	background-color: #f0eef0;
+	opacity: 0.7;
+}
+
+#login-form div button {
+	width: 100px;
+	height: 40px;
+	margin-left: 22px;
+	margin-top: 20px;
+	background: #6f4b72 url(images/bg-button.png) repeat-x center center;
+	color: white;
+	font-weight: bold;
+	border-radius: 3px;
+	border:none;
+}
+
+#login-form form div a {
+	font-size: 13px;
+	font-weight: bold;
+	color: rgba(0,0,0,0.4);
 	text-decoration: none;
-	color: black;
-	font-weight: bold;
-	font-size: 25px;
+	margin-left: 30px;
+}
+
+#shadow {
+    position: absolute;
+    width: 400px;
+    height: 38px;
+    top: 50%;
+    left: 50%;
+    padding-top: 54px;
+    margin-left: -200px;
+    z-index: -1;
+}
+#shadow img:first-child {
+	float: right;
+}
+#shadow img:last-child {
+	float: left;
+	transform: rotateY(180deg);
 }
