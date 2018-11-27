@@ -3,10 +3,16 @@
 	padding: 0;
 }
 
+input:focus, input:active {
+	outline: none;
+}
+
 body {
-	height: -webkit-fill-available;
+	/*height: -webkit-fill-available;
 	background: radial-gradient(circle, #67456b, #2f0e32), url(images/bg.png);
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+	background: #2f0e32 url("images/background.png");
+	background-size: cover;
 	font-family: Roboto, san-serif;
 }
 
@@ -65,11 +71,12 @@ body {
 
 #login-form div:first-child input#username {
 	border: none;
-	margin-top: 21px;
+	margin-top: 18px;
 	margin-left: 21px;
 	font-weight: bold;
 	background-color: #f0eef0;
 	opacity: 0.7;
+	width: calc(100% - 50px);
 }
 
 #login-form div:nth-child(2) {
@@ -84,11 +91,12 @@ body {
 
 #login-form div:nth-child(2) input#password {
 	border: none;
-	margin-top: 21px;
+	margin-top: 18px;
 	margin-left: 21px;
 	font-weight: bold;
 	background-color: #f0eef0;
 	opacity: 0.7;
+	width: calc(100% - 50px);
 }
 
 #login-form div button {
