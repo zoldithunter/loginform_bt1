@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	width: 400px;
+	height: 400px;
+}
+
+#header div {
+	float: right;
+	width: 10px;
+	height: 10px;
+	font-weight: bold;
+	transform: rotate(45deg);
+	box-sizing: border-box;
+}
+
+#header a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
