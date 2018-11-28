@@ -96,7 +96,6 @@ body {
 
 #login-form div:nth-child(2) {
 	border: 1px solid rgba(0,0,0,0.1);
-	background: transparent url(images/Locked.png) no-repeat right center;
 	background-color: #f0eef0;
 	margin-left: 22px;
     margin-top: 23px;
